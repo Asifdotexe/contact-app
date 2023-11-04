@@ -1,0 +1,38 @@
+.form {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 2px solid #3498db; /* Blue border */
+  border-radius: 8px;
+  margin: 20px auto; /* Added margin to the top */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #3498db; /* Blue background */
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #2776b8; /* Darker blue on hover */
+}
