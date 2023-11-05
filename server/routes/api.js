@@ -1,5 +1,3 @@
-// routes/api.js
-
 const express = require('express');
 const router = express.Router();
 const Contact = require('../models/Contact'); // Import your Mongoose model

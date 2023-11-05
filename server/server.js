@@ -12,11 +12,11 @@ const port = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-const mongoConnectionString = 'mongodb://localhost:27017/FSD'; // MongoDB connection string
-const collectionName = 'FSD23'; // collection name
+const mongoConnectionString = 'mongodb://localhost:27017/contact-data'; // MongoDB connection string
+const collectionName = 'contacts'; // collection name
 
 mongoose
-  .connect(mongoConnectionString, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
+  .connect(mongoConnectionString, { useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => {
     console.log('Connected to MongoDB');
   })
@@ -24,14 +24,6 @@ mongoose
     console.error(err);
   });
 
-// Define a Mongoose schema and model for the "FSD23" collection
-const contactSchema = new mongoose.Schema({
-  name: String,
-  email: String,
-  phone: String,
-});
-
-const Contact = mongoose.model(collectionName, contactSchema);
 
 // Define API routes
 const apiRoutes = require('./routes/api');
